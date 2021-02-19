@@ -50,12 +50,12 @@ jobs:
 
     - name: clean install
       run: |
-        rm -rf node_modules package-lock.json yarn-lock.json
+        rm -rfv node_modules package-lock.json yarn.lock
         git add "*"
         yarn
         yarn upgrade --latest
         synp --source-file yarn.lock
-        git add package-lock.json yarn-lock.json
+        git add package-lock.json yarn.lock
         git add "*"
 
     - name: package-update
