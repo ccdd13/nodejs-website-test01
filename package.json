@@ -8,6 +8,12 @@
     "glitch",
     "express"
   ],
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "url": "https://github.com/ccdd13/nodejs-website-test01"
+  },
   "main": "server-express.js",
   "scripts": {
     "start": "node -r esm server-express.js"
@@ -17,11 +23,5 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
     "handlebars": "^4.7.7"
-  },
-  "engines": {
-    "node": ">=12"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
   }
 }
