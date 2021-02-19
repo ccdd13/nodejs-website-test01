@@ -58,13 +58,15 @@ jobs:
         git add package-lock.json yarn.lock
         git add "*"
 
-    - name: package-update
-      uses: taichi/actions-package-update@master
-      env:
-        AUTHOR_EMAIL: 78702084+ccdd13@users.noreply.github.com
-        AUTHOR_NAME: ccdd13
-        EXECUTE: "true"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        UPDATE_COMMAND: yarn
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
       with:
-        args: upgrade --latest
+        title: "[chore] packages update"
+        commit-message: "packages update"
+        branch: chore/update-package
+        signoff: true
+        delete-branch: true
+        branch-suffix: timestamp
+        assignees: ${{ GITHUB_ACTOR }}
+        reviewers: ${{ GITHUB_ACTOR }}
+        draft: false
