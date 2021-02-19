@@ -67,6 +67,6 @@ jobs:
         signoff: true
         delete-branch: true
         branch-suffix: timestamp
-        assignees: ${{ GITHUB_ACTOR }}
-        reviewers: ${{ GITHUB_ACTOR }}
+        assignees: ${{ env.GITHUB_ACTOR }}
+        reviewers: ${{ env.GITHUB_ACTOR }}
         draft: false
