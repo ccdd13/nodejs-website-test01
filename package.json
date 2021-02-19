@@ -1,10 +1,22 @@
 {
   "name": "nodejs-project",
   "version": "1.1.1",
-  "description": "node replit with update nodejs version script using nvm",
-  "main": "index.js",
-  "author": "ccdd13 <78702084+ccdd13@users.noreply.github.com>",
+  "description": "A simple Node app built on Express, instantly up and running on replit/glitch with update nodejs version script using nvm",
   "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "replit",
+    "express"
+  ],
+  "author": "ccdd13 <78702084+ccdd13@users.noreply.github.com>",
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
   "private": true,
   "scripts": {
     "start": "node -r esm index.js --production",
@@ -20,7 +32,9 @@
   },
   "dependencies": {
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "express-handlebars": "^5.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7",

@@ -3,12 +3,17 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![run on replit](https://repl.it/badge/github/ccdd13/nodejs-project)](https://repl.it/github/ccdd13/nodejs-project)
 
+> A server that serves a webpage, its resources, and some data
+
 my nodejs project
 expressjs website test
 
 ## Credit
 
-fork of https://replit.com/@CrazyVideoGamez/Update-Node-Script
+- fork of https://replit.com/@CrazyVideoGamez/Update-Node-Script
+- https://glitch.com
+
+( ᵔ ᴥ ᵔ )
 
 ## License
 
