@@ -14,7 +14,7 @@
     "url": "https://glitch.com/edit/#!/hello-express"
   },
   "engines": {
-    "node": "12.x"
+    "node": ">=12.x"
   },
   "main": "index.js",
   "private": true,
