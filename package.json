@@ -11,7 +11,7 @@
     "dev": "yarn _nodemon -- --development",
     "debug": "yarn _nodemon --inspect -- --development",
     "_nodemon": "yarn nodemon --verbose --spawn --exec 'node -r esm' index.js",
-    "test": "yarn fix && bash -c '>&2 echo no test ; exit 1'",
+    "test": "yarn fix && node -r esm test/test.js",
     "lint": "yarn standard",
     "fix": "yarn lint --fix",
     "ci": "CI=true && rm -rf node_modules/ && yarn install --immutable-cache",
