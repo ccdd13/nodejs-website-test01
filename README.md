@@ -4,11 +4,11 @@
 
 my nodejs project
 
-# Credit
+## Credit
 
 fork of https://replit.com/@CrazyVideoGamez/Update-Node-Script
 
-# License
+## License
 
 MIT License
 
