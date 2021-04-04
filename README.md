@@ -1,6 +1,7 @@
 # nodejs project
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![run on replit](https://repl.it/badge/github/ccdd13/nodejs-project)](https://repl.it/github/ccdd13/nodejs-project)
 
 my nodejs project
 
