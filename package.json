@@ -15,7 +15,8 @@
     "lint": "yarn standard",
     "fix": "yarn lint --fix",
     "ci": "CI=true && rm -rf node_modules/ && yarn install --immutable-cache",
-    "pr": "yarn install --immutable --immutable-cache --check-cache"
+    "pr": "yarn install --immutable --immutable-cache --check-cache",
+    "doctor":"yarn dlx @yarnpkg/doctor"
   },
   "dependencies": {
     "esm": "^3.2.25",
