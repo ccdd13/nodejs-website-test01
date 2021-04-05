@@ -21,6 +21,7 @@ tput setaf 6;
 printf '\nOr, just copy and paste the commands inside the script.\n\n\n'
 tput init
 
+npm install --global yarn@latest
 yarn global add npm@latest yarn@latest synp@latest
 yarn global upgrade npm@latest yarn@latest synp@latest
 node --version ; npm --version ; yarn --version

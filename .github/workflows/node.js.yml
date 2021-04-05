@@ -50,14 +50,14 @@ jobs:
 
     - name: clean install
       run: |
-        rm -rfv node_modules package-lock.json yarn.lock
+        rm -rfv node_modules package-lock.json
         git add "*"
         yarn
-        yarn upgrade --latest
+        yarn up
+        yarn stage --commit
         synp --source-file yarn.lock
         rm -rf node_modules
-        git add package-lock.json yarn.lock
-        git add "*"
+        git add -A
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3

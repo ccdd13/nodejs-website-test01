@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html{{#each htmlATTR}} {{@key}}="{{this}}"{{/each}}{{#if lang}} lang="{{lang}}"{{/if}}{{#if dir}} dir="{{dir}}"{{/if}}>
 <head>
-  <meta charset="utf-8">
-  <title>Example App</title>
+  <meta charset="{{#if charset}}{{charset}}{{/if}}{{#unless charset}}utf-8{{/unless}}">
+  <title>{{#if title}}{{title}}{{/if}}{{#unless title}}Example App{{/unless}}</title>
+  {{#each rawheadtags}}
+    {{this}}
+  {{/each}}
+  {{#each metas}}
+    <meta{{#each metas}} {{@key}}="{{this}}"{{/each}}/>
+  {{/each}}
+  {{#each iconsHREF}}
+    <link href="{{this}}" rel="icon"/>
+  {{/each}}
+  {{#each icons}}
+    {{#with {{this}}}}
+      {{#if href}}
+        <link {{#if id}}id="{{id}}" {{/if}}href="{{href}}"{{#if sizes}} sizes="{{sizes}}"{{/if}} rel="icon"{{#if type}} type="{{type}}"{{/if}}{{#if sri}} integrity="{{sri}}"{{/if}} crossorigin="{{#if crossorigin}}{{crossorigin}}{{/if}}{{#unless crossorigin}}anonymous{{/unless}}"/>
+      {{/if}}
+    {{/with}}
+  {{/each}}
+  {{#each cssHREF}}
+    <link href="{{this}}" rel="stylesheet" type="text/css" media="all"/>
+  {{/each}}
+  {{#each prcssHREF}}
+    <link href="{{this}}" rel="stylesheet" type="text/css" media="print"/>
+  {{/each}}
+  {{#each outerCSS}}
+    {{#with {{this}}}}
+      {{#if href}}
+        <link {{#if id}}id="{{id}}" {{/if}}href="{{href}}" rel="stylesheet" type="{{#if type}}{{type}}{{/if}}{{#unless type}}text/css{{/unless}}"{{#if sri}} integrity="{{sri}}"{{/if}} crossorigin="{{#if crossorigin}}{{crossorigin}}{{/if}}{{#unless crossorigin}}anonymous{{/unless}}"{{#if media}} media="{{media}}"{{/if}}/>
+      {{/if}}
+    {{/with}}
+  {{/each}}
+  {{#each innerCSS}}
+    {{#with {{this}}}}
+      {{#if content}}
+        <style{{#if id}} id="{{id}}"{{/if}}{{#if nonce}} nonce="{{nonce}}"{{/if}}>{{content}}</style>
+      {{/if}}
+    {{/with}}
+  {{/each}}
+  {{#each qinnerCSS}}
+    <style{{#if nonceCSS}} nonce="{{nonceCSS}}"{{/if}}>{{this}}</style>
+  {{/each}}
 </head>
-<body>
+<body{{#each bodyATTR}} {{@key}}="{{this}}"{{/each}}>
   {{{body}}}
+  {{#each rawbodytags}}
+    {{this}}
+  {{/each}}
+  {{#each jsHREF}}
+    <script src="{{this}}"></script>
+  {{/each}}
+  {{#each scripts}}
+    {{#with {{this}}}}
+      {{#if src}}
+        <script {{#if id}}id="{{id}}" {{/if}}src="{{src}}"{{#if async}} async{{/if}}{{#if sri}} integrity="{{sri}}"{{/if}}{{#if nonce}} nonce="{{nonce}}"{{/if}} crossorigin="{{#if crossorigin}}{{crossorigin}}{{/if}}{{#unless crossorigin}}anonymous{{/unless}}">{{#if content}}{{content}}{{/if}}</script>
+      {{/if}}
+    {{/with}}
+  {{/each}}
+  {{#each innerJS}}
+    <script{{#if nonceJS}} nonce="{{nonceJS}}"{{/if}}>{{this}}</script>
+  {{/each}}
 </body>
 </html>

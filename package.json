@@ -28,7 +28,9 @@
     "fix": "yarn lint --fix",
     "ci": "CI=true && rm -rf node_modules/ && yarn install --immutable-cache",
     "pr": "yarn install --immutable --immutable-cache --check-cache",
-    "doctor":"yarn dlx @yarnpkg/doctor"
+    "doctor":"yarn dlx @yarnpkg/doctor",
+    "git":"yarn stage --commit && git status",
+    "repl":"yarn node --interactive -r esm"
   },
   "dependencies": {
     "esm": "^3.2.25",

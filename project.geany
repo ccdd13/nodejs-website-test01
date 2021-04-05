@@ -1,0 +1,73 @@
+[editor]
+line_wrapping=false
+line_break_column=80
+auto_continue_multiline=true
+
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=true
+strip_trailing_spaces=true
+replace_tabs=true
+
+[indentation]
+indent_width=2
+indent_type=0
+indent_hard_tab_width=8
+detect_indent=true
+detect_indent_width=true
+indent_mode=3
+
+[project]
+name=nodejs-project
+base_path=/media/demo/POME/system/tmp/nodejs-website-test01
+description=A simple Node app built on Express, instantly up and running on replit/glitch with update nodejs version script using nvm
+file_patterns=
+
+[long line marker]
+long_line_behaviour=2
+long_line_column=80
+
+[files]
+current_page=-1
+
+[VTE]
+last_dir=/home/demo
+
+[build-menu]
+NF_00_LB=upgrade
+NF_00_CM=yarn up
+NF_00_WD=
+NF_01_LB=upgrade-interactive
+NF_01_CM=yarn upgrade-interactive
+NF_01_WD=
+NF_02_LB=node repl
+NF_02_CM=yarn repl
+NF_02_WD=
+NF_03_LB=test
+NF_03_CM=yarn test
+NF_03_WD=
+EX_00_LB=_Execute
+EX_00_CM=yarn dev
+EX_00_WD=
+EX_01_LB=Debug
+EX_01_CM=yarn debug
+EX_01_WD=
+NoneFT_00_LB=
+NoneFT_00_CM=
+NoneFT_00_WD=
+NoneFT_01_LB=
+NoneFT_01_CM=
+NoneFT_01_WD=
+NoneFT_02_LB=
+NoneFT_02_CM=
+NoneFT_02_WD=
+filetypes=None;Javascript;
+JavascriptFT_00_LB=test
+JavascriptFT_00_CM=yarn test %f
+JavascriptFT_00_WD=
+JavascriptFT_01_LB=lint
+JavascriptFT_01_CM=yarn lint %f
+JavascriptFT_01_WD=
+JavascriptFT_02_LB=fix
+JavascriptFT_02_CM=yarn fix %f
+JavascriptFT_02_WD=
