@@ -33,11 +33,12 @@ document.getElementById("music-animation").classList.remove('on')
 };
 
 var button = document.getElementById("toggle");
+var text_music_on="Music on"
+var text_music_off="Music off"
 button.addEventListener('click', function() {
-if (button.getAttribute("data-text-swap") == button.innerHTML) {
-    button.innerHTML = button.getAttribute("data-text-original");
+if (isPlaying) {
+    button.innerHTML = text_music_on
 } else {
-    button.setAttribute("data-text-original", button.innerHTML);
-    button.innerHTML = button.getAttribute("data-text-swap");
+    button.innerHTML = text_music_off
 }
 }, false);
