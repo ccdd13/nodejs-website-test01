@@ -17,28 +17,28 @@ var music = document.getElementById("music");
 var isPlaying = false;
 music.volume = 0.2;
 function togglePlay() {
-if (isPlaying) {
+  if (isPlaying) {
     music.pause()
-} else {
+  } else {
     music.play();
-}
+  }
 };
 music.onplaying = function() {
-isPlaying = true;
-document.getElementById("music-animation").classList.add('on')
+  isPlaying = true;
+  document.getElementById("music-animation").classList.add('on')
 };
 music.onpause = function() {
-isPlaying = false;
-document.getElementById("music-animation").classList.remove('on')
+  isPlaying = false;
+  document.getElementById("music-animation").classList.remove('on')
 };
 
 var button = document.getElementById("toggle");
-var text_music_on="Music on"
-var text_music_off="Music off"
+var text_music_on = "Music on"
+var text_music_off = "Music off"
 button.addEventListener('click', function() {
-if (isPlaying) {
+  if (isPlaying) {
     button.innerHTML = text_music_on
-} else {
+  } else {
     button.innerHTML = text_music_off
-}
+  }
 }, false);
