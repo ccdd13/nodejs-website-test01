@@ -1,13 +1,13 @@
-# nodejs project
+# my nodejs web project
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![run on replit](https://repl.it/badge/github/ccdd13/nodejs-project)](https://repl.it/github/ccdd13/nodejs-project)
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/ccdd13/nodejs-website-test01)
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/nodejs-website-test01)
+[![run on replit](https://repl.it/badge/github/ccdd13/my-nodejs-web-project)](https://repl.it/github/ccdd13/my-nodejs-web-project)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/ccdd13/my-nodejs-web-project)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/my-nodejs-web-project)
 
 > A server that serves a webpage, its resources, and some data
 
-my nodejs project
+my nodejs web project
 expressjs website test
 
 ## Credit
