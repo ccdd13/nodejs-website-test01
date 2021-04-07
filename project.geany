@@ -18,8 +18,8 @@ detect_indent_width=true
 indent_mode=3
 
 [project]
-name=nodejs-project
-base_path=/media/demo/POME/system/tmp/nodejs-website-test01
+name=my-nodejs-web-project
+base_path=/media/demo/POME/my-nodejs-web-project
 description=A simple Node app built on Express, instantly up and running on replit/glitch with update nodejs version script using nvm
 file_patterns=
 
