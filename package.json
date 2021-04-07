@@ -1,6 +1,6 @@
 {
-  "name": "nodejs-project",
-  "version": "1.1.1",
+  "name": "my-nodejs-web-project",
+  "version": "2.2.2",
   "description": "A simple Node app built on Express, instantly up and running on replit/glitch with update nodejs version script using nvm",
   "license": "MIT",
   "keywords": [
@@ -11,7 +11,7 @@
   ],
   "author": "ccdd13 <78702084+ccdd13@users.noreply.github.com>",
   "repository": {
-    "url": "https://github.com/ccdd13/nodejs-website-test01"
+    "url": "https://github.com/ccdd13/my-nodejs-web-project"
   },
   "engines": {
     "node": ">=12.x"
