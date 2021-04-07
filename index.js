@@ -5,7 +5,7 @@
 import os from 'os'
 import { server } from './src/server.js'
 
-console.log('nodejs project')
+console.log('my nodejs web project')
 console.log(`\tos.platform() ${os.platform()}`)
 console.log(`\tos.arch() ${os.arch()}`)
 console.log(`\tos.type() ${os.type()}`)
