@@ -3,7 +3,7 @@
 "use strict";
 
 import os from "os";
-import { server } from "./src/server.js";
+import {server} from "./src/server.js";
 
 console.log("my nodejs web project");
 console.log(`\tos.platform() ${os.platform()}`);
