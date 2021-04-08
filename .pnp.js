@@ -19,14 +19,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "nodejs-project",
+        "name": "my-nodejs-web-project",
         "reference": "workspace:."
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["nodejs-project", ["workspace:."]]
+      ["my-nodejs-web-project", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -39,6 +39,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["esm", "npm:3.2.25"],
             ["express", "npm:4.17.1"],
+            ["express-handlebars", "npm:5.3.0"],
+            ["handlebars", "npm:4.7.7"],
             ["nodemon", "npm:2.0.7"],
             ["standard", "npm:16.0.3"]
           ],
@@ -1586,6 +1588,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["express-handlebars", [
+        ["npm:5.3.0", {
+          "packageLocation": "./.yarn/cache/express-handlebars-npm-5.3.0-5e14e3a0cf-9f42edbaba.zip/node_modules/express-handlebars/",
+          "packageDependencies": [
+            ["express-handlebars", "npm:5.3.0"],
+            ["glob", "npm:7.1.6"],
+            ["graceful-fs", "npm:4.2.6"],
+            ["handlebars", "npm:4.7.7"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["fast-deep-equal", [
         ["npm:3.1.3", {
           "packageLocation": "./.yarn/cache/fast-deep-equal-npm-3.1.3-790edcfcf5-451526766b.zip/node_modules/fast-deep-equal/",
@@ -1881,6 +1895,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/graceful-fs-npm-4.2.6-535b2234f1-84d39c7756.zip/node_modules/graceful-fs/",
           "packageDependencies": [
             ["graceful-fs", "npm:4.2.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["handlebars", [
+        ["npm:4.7.7", {
+          "packageLocation": "./.yarn/cache/handlebars-npm-4.7.7-a9ccfabf80-2df9a6b422.zip/node_modules/handlebars/",
+          "packageDependencies": [
+            ["handlebars", "npm:4.7.7"],
+            ["minimist", "npm:1.2.5"],
+            ["neo-async", "npm:2.6.2"],
+            ["source-map", "npm:0.6.1"],
+            ["uglify-js", "npm:3.13.3"],
+            ["wordwrap", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -2882,6 +2910,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["my-nodejs-web-project", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["my-nodejs-web-project", "workspace:."],
+            ["esm", "npm:3.2.25"],
+            ["express", "npm:4.17.1"],
+            ["express-handlebars", "npm:5.3.0"],
+            ["handlebars", "npm:4.7.7"],
+            ["nodemon", "npm:2.0.7"],
+            ["standard", "npm:16.0.3"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["natural-compare", [
         ["npm:1.4.0", {
           "packageLocation": "./.yarn/cache/natural-compare-npm-1.4.0-97b75b362d-2daf93d9bb.zip/node_modules/natural-compare/",
@@ -2896,6 +2939,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/negotiator-npm-0.6.2-ba538e167a-4b230bd15f.zip/node_modules/negotiator/",
           "packageDependencies": [
             ["negotiator", "npm:0.6.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["neo-async", [
+        ["npm:2.6.2", {
+          "packageLocation": "./.yarn/cache/neo-async-npm-2.6.2-75d6902586-34a8f53091.zip/node_modules/neo-async/",
+          "packageDependencies": [
+            ["neo-async", "npm:2.6.2"]
           ],
           "linkType": "HARD",
         }]
@@ -2917,19 +2969,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["which", "npm:2.0.2"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["nodejs-project", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["nodejs-project", "workspace:."],
-            ["esm", "npm:3.2.25"],
-            ["express", "npm:4.17.1"],
-            ["nodemon", "npm:2.0.7"],
-            ["standard", "npm:16.0.3"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["nodemon", [
@@ -3876,6 +3915,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["source-map", [
+        ["npm:0.6.1", {
+          "packageLocation": "./.yarn/cache/source-map-npm-0.6.1-1a3621db16-8647829a06.zip/node_modules/source-map/",
+          "packageDependencies": [
+            ["source-map", "npm:0.6.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["spdx-correct", [
         ["npm:3.1.1", {
           "packageLocation": "./.yarn/cache/spdx-correct-npm-3.1.1-47f574c27a-f3413eb225.zip/node_modules/spdx-correct/",
@@ -4284,6 +4332,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["uglify-js", [
+        ["npm:3.13.3", {
+          "packageLocation": "./.yarn/cache/uglify-js-npm-3.13.3-7fe31ae2ab-ff326348c2.zip/node_modules/uglify-js/",
+          "packageDependencies": [
+            ["uglify-js", "npm:3.13.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["unbox-primitive", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/unbox-primitive-npm-1.0.1-50b9fde246-aa944f1ecf.zip/node_modules/unbox-primitive/",
@@ -4484,6 +4541,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/word-wrap-npm-1.2.3-7fb15ab002-6526abd75d.zip/node_modules/word-wrap/",
           "packageDependencies": [
             ["word-wrap", "npm:1.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["wordwrap", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/wordwrap-npm-1.0.0-ae57a645e8-b4f3f8104a.zip/node_modules/wordwrap/",
+          "packageDependencies": [
+            ["wordwrap", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
