@@ -13,36 +13,36 @@
 
 // Some Js for audio toggle
 
-var music = document.getElementById("music");
-var isPlaying = false;
-music.volume = 0.2;
-function togglePlay() {
+const music = document.getElementById('music')
+let isPlaying = false
+music.volume = 0.2
+function togglePlay () {
   if (isPlaying) {
-    music.pause();
+    music.pause()
   } else {
-    music.play();
+    music.play()
   }
 }
 music.onplaying = function () {
-  isPlaying = true;
-  document.getElementById("music-animation").classList.add("on");
-};
+  isPlaying = true
+  document.getElementById('music-animation').classList.add('on')
+}
 music.onpause = function () {
-  isPlaying = false;
-  document.getElementById("music-animation").classList.remove("on");
-};
+  isPlaying = false
+  document.getElementById('music-animation').classList.remove('on')
+}
 
-var button = document.getElementById("toggle");
-var text_music_on = "Music on";
-var text_music_off = "Music off";
+const button = document.getElementById('toggle')
+const text_music_on = 'Music on'
+const text_music_off = 'Music off'
 button.addEventListener(
-  "click",
+  'click',
   function () {
     if (isPlaying) {
-      button.innerHTML = text_music_on;
+      button.innerHTML = text_music_on
     } else {
-      button.innerHTML = text_music_off;
+      button.innerHTML = text_music_off
     }
   },
   false
-);
+)
