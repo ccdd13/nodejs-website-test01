@@ -21,7 +21,21 @@ tput setaf 6;
 printf '\nOr, just copy and paste the commands inside the script.\n\n\n'
 tput init
 
-npm install --global yarn@latest
-yarn global add npm@latest yarn@latest synp@latest
-yarn global upgrade npm@latest yarn@latest synp@latest
-node --version ; npm --version ; yarn --version
+npm install --global npm@latest yarn@latest synp@latest
+npm update --global
+oldcwd=$(pwd)
+#cd ~/.config/yarn/global
+cd ~
+yarn global add --force npm@latest yarn@latest synp@latest
+yarn global add --force
+cd $oldcwd
+
+echo
+
+oldcwd=$(pwd) && \
+echo Node.JS      $(node --version) && \
+echo NPM          $(npm --version) && \
+cd ~ && \
+echo YARN classic $(yarn --version) && \
+cd $oldcwd && \
+echo YARN berry   $(yarn --version)
